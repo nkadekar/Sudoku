@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SUDOKU</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+    <!-- <script src="boardStorage.js"></script>  -->
+  </head>
+  <!-- <div style="background-image: url('background.jpg');"> -->
+
+  <div id="confetti-animation" class="hidden">
+    <div class="container">
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+      <div class="confetti"></div>
+    </div>
+  </div>
+
+  <header>
+    <h1 class="font-1">SUDOKU</h1>
+    <button class="button" id="newPuzzle-btn" value="new-puzzle">
+      New Puzzle Board
+    </button>
+
+    <div class="hidden" id="timer">
+      <h2 style="display: inline">Time Remaining -</h2>
+      <h2 id="timer-numbers" style="display: inline"></h2>
+      <h2 id="timer-expired-message"></h2>
+    </div>
+  </header>
+  <div>
+    <body>
+      <table  id="grid" cellspacing="0" cellpadding="0"></table>
+      <div id="control-buttons" class="hidden">
+        <button style="margin: 20px" class="button" id="checkSolution-btn">Check Solution</button>
+        <button class="button" id="showSolution-btn">Show Solution</button>
+        <button  style="margin: 20px" class="button" id="reset-btn" onclick="resetBoard()">
+          Reset Board
+        </button>
+      </div>
+    </body>
+  </div>
+
+  <footer>
+    <div id="diffSettings">
+      <h4 class="font-2" style="display: inline">Game Difficulty:</h4>
+      <label
+        ><input
+          class="font-2"
+          id="easy-diff"
+          type="radio"
+          name="difficulty"
+          value="Easy"
+          checked
+        />
+        <h3 class="font-2" style="display: inline">Easy</h3></label>
+      <label
+        ><input
+          id="hard-diff"
+          type="radio"
+          name="difficulty"
+          value="Hard"
+        /><h4 class="font-2" style="display: inline">Hard</h4></label></label
+      >
+    </div>
+
+    <div id="gameSettings">
+      <h3 class="font-2" style="display: inline">Game Settings:</h3>
+      <label
+        ><input
+          id="timer-checkbox"
+          type="checkbox"
+          name="timer-checkbox"
+          checked
+        /><h2 class="font-2" style="display: inline">Timer</h2></label></label>
+    </div>
+
+    <div id="credit" class="hidden">
+      <p>Created by future Google Engineers, Nikhil Kadekar and Edward Zhu</p>
+    </div>
+  </footer>
+</html>
